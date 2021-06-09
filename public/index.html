@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">    
+    <title>PHC2021 - Backup Folder Generator</title>
+
+    <style>
+        label {
+            font-size: 1.5rem;
+        }
+        input {
+            font-size: 1.2rem;
+            /* text-align: center; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2 class="text-center mt-4">2021PHC - Backup Folders Generator</h2>
+        <div class="mt-4">
+            <form id="mainForm" class="text-center container border p-4" action="/api/folders/2021PHC_Backup_Folder" method="POST">
+                    <h3 >Enter the Correct Details Below to Generate a Template</h3>
+                    <div class="form-group mt-4 border bg-primary">
+                        <label for="distName">District Name:</label>
+                        <input type="text" class="form-control" id="distName" placeholder="Enter District Name" name="distName">
+                      </div>
+
+                      <div class="d-flex mt-3">
+                          <div class="form-group w-50 border bg-primary">
+                            <label for="distCode">District Code:</label>
+                            <input type="number" class="form-control" id="distCode" placeholder="Enter District Code" name="distCode">
+                          </div>
+                          <div class="form-group w-50 border bg-primary">
+                            <label for="totalSAs">Total SAs:</label>
+                            <input type="number" class="form-control" id="totalSAs" placeholder="Enter Total Number of SAs" name="totalSAs">
+                          </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary mt-2">Generate Folder</button>
+                    </form>
+                    
+                    <div class="mt-4 text-center">
+                        <h3 class="my-1 text-warning">NB: If You Generate the folder and it's not working properly Regenerate it Again. <br /> <i class="text-danger">It will be saved Automatically inside your Downloads Folder</i> </h3>
+                        <p class="text-warning">The File Name is: <em class="text-danger">2021PHC_Backup_Folder.zip</em></p>
+                        <!-- <button id="download" type="button" class="btn btn-danger mt-2">Download Folder Now</button> -->
+                    </div>
+        </div>
+
+        <footer>
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                Developed By:
+                <a class="text-reset fw-bold" href="#">Mohammed-Subreel Abdulai (0246911347)</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
