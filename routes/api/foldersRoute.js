@@ -7,7 +7,7 @@ const createFolders = require('../../functions/createFolders');
 // 2021PHC_Backup_Folder
 // POST /api/folders/creater
 // @ Public Route
-router.post('/create', (req, res) => {
+router.post('/2021PHC_Backup_Folder', (req, res) => {
     const {
         distName,
         distCode,
