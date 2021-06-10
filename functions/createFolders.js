@@ -55,7 +55,8 @@ async function createFolders(res, dictsName, distCode, totalSAs) {
     // Create Zip File of Folders created
     zip(`./storage/folders/${distCode}`, `./storage/zipfiles/${distCode}/${districtName} BACKUP_FOLDER.zip`)
     .then(() => res.sendFile(path.join(__dirname, `../storage/zipfiles/${distCode}/${districtName} BACKUP_FOLDER.zip`)))
-    .catch(err => res.status(500).send('<h2>Oops Request Timeout</h2>'))
+    .catch(err => res.status(500).send({msg: err}))
+    // .catch(err => res.status(500).send('<h2>Oops Request Timeout</h2>'))
 
 }
 
