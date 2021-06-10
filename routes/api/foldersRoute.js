@@ -4,9 +4,10 @@ const createFolders = require('../../functions/createFolders');
 
 
 //Create a new Folder Route
+// 2021PHC_Backup_Folder
 // POST /api/folders/creater
 // @ Public Route
-router.post('/2021PHC_Backup_Folder', (req, res) => {
+router.post('/create', (req, res) => {
     const {
         distName,
         distCode,
