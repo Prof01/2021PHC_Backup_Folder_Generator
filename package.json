@@ -1,7 +1,7 @@
 {
-  "name": "project",
+  "name": "2021phc_backup_folder_generator",
   "version": "1.0.0",
-  "description": "Create GSS Template Backup Folders",
+  "description": "This App is Developed to Enable District IT Officers in the 2021 Population And Housing Census to Generate Backup Folders With Ease",
   "main": "server.js",
   "scripts": {
     "start": "node app.js",
