@@ -1,8 +1,8 @@
-    // Getting Started
+    ## Getting Started
 
     npm install
 
-    // How to Use 
+    ## How to Use 
     
         The Steps Below will help you use the Generated template with ease.
 
