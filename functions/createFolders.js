@@ -58,7 +58,7 @@ async function createFolders(res, dictsName, distCode, totalSAs) {
     })
 
     //Create readme.txt write to file
-    await fs.writeFile(path.join(__dirname, `../storage/folders/${distCode}`, 'readme.txt'), readmeMessage, err => {
+    await fs.writeFile(path.join(__dirname, `../storage/folders/${distCode}`, 'README.txt'), readmeMessage, err => {
         if(err) return;
         // console.log('File written to....');
         
